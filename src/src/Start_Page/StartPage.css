@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'F1Regular';
+    src: url('../../../fonts/f1/normal400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'F1Wide';
+    src: url('../../../fonts/f1/normal400wide.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #15151e;
+    font-family: 'F1Wide', serif;
+}
+h1 {
+   color: #df0600;
+}
+
+p {
+    color: white;
+}
+
+button {
+    background-color: #bfc2f2;
+
+    font-family: 'F1Regular', serif;
+
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
