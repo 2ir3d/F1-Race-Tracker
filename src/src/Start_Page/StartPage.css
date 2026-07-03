@@ -1,27 +1,21 @@
-@font-face {
-    font-family: 'F1Regular';
-    src: url('../../../fonts/f1/normal400.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
+/* --------------------Header-------------------- */
+.header {
+    font-family: 'F1Wide', serif;
+
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    font-weight: bold;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
-@font-face {
-    font-family: 'F1Wide';
-    src: url('../../../fonts/f1/normal400wide.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
+/* --------------------Buttons-------------------- */
 
 body {
     background-color: #15151e;
-    font-family: 'F1Wide', serif;
-}
-h1 {
-   color: #df0600;
-}
-
-p {
-    color: white;
+    padding: 0;
 }
 
 button {
@@ -32,4 +26,180 @@ button {
     border: none;
     border-radius: 5px;
     padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+
+button:hover {
+    cursor: crosshair;
+    background-color: #9999ff;
+}
+
+/* --------------------General-------------------- */
+
+/* Border */
+.border-b-surface-neutral-4 {
+    border-bottom-color: #303037;
+}
+
+.border-b-thin {
+    border-bottom-width: 1px;
+}
+
+div {
+    display: block;
+    box-sizing: border-box;
+    border: 0 solid transparent;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* --------------------Container-------------------- */
+
+.Container-module_container__01 {
+    display: block;
+    width: 100%;
+}
+
+.Container-module_inner__01 {
+    display: block;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+
+/* --------------------Positioning-------------------- */
+
+.items-center {
+    align-items: center;
+}
+
+.item-end{
+    align-items: flex-end;
+}
+
+.relative {
+    position: relative;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: space-between;
+}
+
+.self-stretch {
+    align-self: stretch;
+}
+
+/* --------------------Spacing-------------------- */
+
+.min-h-0 {
+    max-width: 0;
+}
+
+.min-h-\[56px\] {
+    min-height: 56px;
+}
+
+.max-h-\[100vw\] {
+    max-width: 100vw;
+}
+
+.py-px-8 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.gap-px-2 {
+    gap: 2px;
+}
+
+.gap-px-4 {
+    gap: 4px;
+}
+
+.gap-px-12 {
+    gap: 12px;
+}
+
+.w-\[1px\] {
+    width: 1px;
+}
+
+/* Idk what category these things belong so I put them here :) */
+
+.bg-static {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.opacity-20 {
+    opacity: .2;
+}
+
+/* --------------------Text-------------------- */
+h1 {
+   color: #df0600;
+}
+
+p {
+    font-family: 'F1Regular', serif;
+    color: white;
+    margin-bottom: 1em;
+}
+
+a {
+    color: white;
+    text-decoration: inherit;
+}
+
+span {
+    color: white;
+}
+
+.typography-module_display-s-regular__01 {
+    font: 400 .75rem / 1rem 'F1Regular', serif;
+    letter-spacing: 0;
+}
+
+.typography-module_display-m-bold__01 {
+    font: 500 1rem / 1.375rem 'F1Wide', serif;
+    letter-spacing: 0;
+}
+
+/* --------------------Fonts-------------------- */
+
+@font-face {
+    font-family: 'F1Regular';
+    src: url('../../../fonts/f1/normal400.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'F1Wide';
+    src: url('../../../fonts/f1/normal400wide.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
