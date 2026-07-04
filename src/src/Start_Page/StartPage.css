@@ -36,7 +36,7 @@ button {
 }
 
 button:hover {
-    cursor: crosshair;
+    cursor: pointer;
     background-color: #9999ff;
 }
 
@@ -81,7 +81,6 @@ div {
     margin-right: 24px;
 }
 
-
 /* --------------------Positioning-------------------- */
 
 .items-center {
@@ -122,6 +121,10 @@ div {
     min-height: 56px;
 }
 
+.min-h-\[100vw\] {
+    min-height: 100vw;
+}
+
 .max-h-\[100vw\] {
     max-width: 100vw;
 }
@@ -147,6 +150,14 @@ div {
     width: 1px;
 }
 
+.z-0 {
+    z-index: 0;
+}
+
+/* --------------------Sizing-------------------- */
+
+/*No clue how I can size things ;( */
+
 /* Idk what category these things belong so I put them here :) */
 
 .bg-static {
@@ -156,6 +167,10 @@ div {
 
 .opacity-20 {
     opacity: .2;
+}
+
+.link-target {
+    scroll-margin-top: calc(var(120px) + var(120px));
 }
 
 /* --------------------Text-------------------- */
