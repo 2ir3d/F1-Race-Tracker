@@ -145,6 +145,10 @@ div {
     max-width: 0;
 }
 
+.min-h-\[20px\] {
+    min-height: 20px;
+}
+
 .min-h-\[56px\] {
     min-height: 56px;
 }
@@ -174,7 +178,7 @@ div {
 
 /* --------------------Text-------------------- */
 h1 {
-   color: #df0600;
+    color: #df0600;
 }
 
 p {
